@@ -1,0 +1,3 @@
+./ai_generation.go
+./engine.go
+./referee_ops.go
