@@ -1,6 +1,7 @@
 # AIChatMatrix
 
-一个基于 Go 的多智能体讨论矩阵项目，支持在网页端创建房间、配置 AI 角色、启动/停止对话引擎，并通过 WebSocket 实时查看消息流。
+这是一个基于 Go 语言和 WebSocket 构建的 AI 聊天室系统，支持创建多个并行房间，每个房间可以接入 OpenAI、Claude、文心一言等不同厂商的 AI 模型作为角色，裁判角色可动态添加/移除 AI 机器人、设定提示词与场景规则、触发事件并判定获胜条件；AI 之间支持私聊（私聊内容在公屏提示但仅裁判和参与者可见），观摩机器人能实时统计对话数据并在结束时生成评分总结，同时支持房间复制和聊天记录多格式导出。
+<img width="1440" height="900" alt="image" src="https://github.com/user-attachments/assets/1de71b42-e463-4cfe-9880-3ad9eec03deb" />
 
 ## 功能特性
 
@@ -12,6 +13,7 @@
 - 对话控制：启动、停止、重启房间引擎
 - 实时通信：通过 WebSocket 推送消息与状态
 - 房间能力：克隆房间、导出记录、系统指令注入等
+<img width="1440" height="900" alt="image" src="https://github.com/user-attachments/assets/da0f3708-02f2-4d18-99d4-41650e775561" />
 
 ## 技术栈
 
@@ -37,6 +39,7 @@
 ├── go.mod
 └── README.md
 ```
+<img width="1440" height="900" alt="image" src="https://github.com/user-attachments/assets/6cb4f215-35ec-4847-904c-a693b48ff65c" />
 
 ## 快速开始
 
@@ -63,6 +66,8 @@ PORT=9090 go run ./cmd/main.go
 浏览器访问：
 
 - `http://localhost:8080`（或你设置的端口）
+
+<img width="1440" height="900" alt="image" src="https://github.com/user-attachments/assets/5200483a-1d75-438e-8ab8-6c5003fb3acd" />
 
 ## 配置说明（`config.json`）
 
