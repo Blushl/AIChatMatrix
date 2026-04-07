@@ -24,7 +24,7 @@
 ## 项目结构
 
 ```text
-.
+。
 ├── cmd/main.go               # 程序入口
 ├── internal/
 │   ├── api/                  # HTTP / WebSocket 路由与处理器
@@ -151,7 +151,3 @@ PROVIDER_ID=<你的provider_id> ./acceptance_room.sh
 
 - `BASE_URL`：默认 `http://localhost:8080`
 - `TIMEOUT_SEC`：默认 `120`
-
-## License
-
-如需开源发布，请在此补充具体许可证（例如 MIT / Apache-2.0）。
